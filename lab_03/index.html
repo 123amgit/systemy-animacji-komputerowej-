@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Fireworks Particle System</title>
+
+<style>
+
+body{
+    background:black;
+    color:white;
+    font-family:sans-serif;
+    text-align:center;
+}
+
+canvas{
+    background:black;
+    display:block;
+    margin:auto;
+}
+
+.controls{
+    margin-top:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h2>Canvas Fireworks</h2>
+
+<canvas id="canvas" width="800" height="500"></canvas>
+
+<div class="controls">
+
+<label>
+Gravity
+<input type="range" id="gravitySlider" min="0.05" max="0.5" step="0.01" value="0.15">
+</label>
+
+<label>
+Particles
+<input type="range" id="particleSlider" min="50" max="400" step="10" value="150">
+</label>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
