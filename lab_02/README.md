@@ -1,68 +1,61 @@
+# Laboratorium 02 - Zegar analogowy w HTML5 Canvas
 
-Laboratorium 02 – Zegar Analogowy (HTML5 Canvas)
-1. Temat ćwiczenia
+## Temat ćwiczenia
+Implementacja zegara analogowego z wykorzystaniem HTML5 Canvas oraz JavaScript ES6.
 
-Implementacja zegara analogowego z wykorzystaniem technologii HTML5 Canvas oraz JavaScript (ES6), z zastosowaniem transformacji układu współrzędnych i animacji w czasie rzeczywistym.
+## Cel ćwiczenia
+Celem laboratorium było zapoznanie się z:
+- transformacjami układu współrzędnych w Canvas,
+- użyciem metod `translate()`, `rotate()`, `save()` i `restore()`,
+- animacją w czasie rzeczywistym za pomocą `requestAnimationFrame()`,
+- zastosowaniem programowania obiektowego w JavaScript.
 
-2. Cel ćwiczenia
+## Opis programu
+Program wyświetla zegar analogowy na elemencie `canvas`. Tarcza zegara jest rysowana dynamicznie, a wskazówki godzinowa, minutowa i sekundowa ustawiane są zgodnie z aktualnym czasem systemowym.
 
-Celem laboratorium było:
+Projekt został wykonany w sposób obiektowy:
+- klasa `Clock` odpowiada za logikę działania zegara,
+- klasa `Hand` odpowiada za rysowanie pojedynczej wskazówki.
 
-poznanie transformacji Canvas (translate, rotate)
-zrozumienie działania stosu macierzy (save, restore)
-implementacja animacji przy użyciu requestAnimationFrame
-zastosowanie programowania obiektowego w JavaScript
-przejście od obliczeń trygonometrycznych do transformacji układu współrzędnych
-3. Opis działania programu
+Dodatkowo zaimplementowano możliwość zatrzymania i wznowienia animacji za pomocą klawisza **Spacja**.
 
-Program rysuje zegar analogowy na elemencie <canvas>.
+## Struktura projektu
+- `index.html` - plik uruchamiający projekt i zawierający element `canvas`
+- `script.js` - plik zawierający logikę działania zegara
+- `README.md` - opis projektu
 
-Zegar:
+## Zastosowane elementy
+W projekcie wykorzystano:
+- HTML5
+- CSS3
+- JavaScript ES6
+- Canvas API
 
-pobiera aktualny czas systemowy
-przelicza go na kąty dla wskazówek
-rysuje tarczę oraz wskazówki
-odświeża obraz w każdej klatce animacji
+## Najważniejsze funkcjonalności
+- wyświetlanie aktualnego czasu,
+- płynny ruch sekundnika z uwzględnieniem milisekund,
+- różne długości i grubości wskazówek,
+- rysowanie tarczy zegara z podziałką minutową i godzinową,
+- obsługa pauzy i wznowienia działania programu.
 
-W projekcie zastosowano podejście obiektowe:
+## Uruchomienie
+Aby uruchomić projekt, należy otworzyć plik `index.html` w przeglądarce internetowej.
 
-klasa Clock zarządza logiką zegara
-klasa Hand odpowiada za rysowanie wskazówek
-4. Struktura projektu
-index.html – zawiera element canvas i uruchamia skrypt
-script.js – implementacja logiki zegara i animacji
-README.md – dokumentacja projektu
-5. Kluczowe elementy implementacji
-5.1 Transformacje układu współrzędnych
-środek układu przeniesiony do środka canvasa
-wskazówki rysowane pionowo
-obrót realizowany przez rotate()
-5.2 Stos macierzy
-save() przed transformacją
-restore() po rysowaniu wskazówki
-brak wpływu jednej transformacji na kolejne
-5.3 Obliczanie czasu
-sekundy uwzględniają milisekundy
-minuty i godziny zależą od poprzednich jednostek
-5.4 Animacja
-wykorzystanie requestAnimationFrame()
-płynne odświeżanie obrazu
-6. Interakcja użytkownika
-klawisz SPACJA zatrzymuje animację
-ponowne naciśnięcie wznawia działanie zegara
-7. Spełnione wymagania
-✔ poprawne wyświetlanie czasu
-✔ wykorzystanie klas (OOP)
-✔ użycie transformacji Canvas
-✔ zastosowanie save/restore
-✔ płynna animacja
-✔ obsługa interakcji (pauza)
-✔ narysowana tarcza zegara
-8. Uruchomienie programu
-Otworzyć plik index.html w przeglądarce
-Program uruchamia się automatycznie
-9. Wnioski
+## Sterowanie
+- `Spacja` - zatrzymanie / wznowienie animacji
 
-Zastosowanie transformacji układu współrzędnych znacząco upraszcza rysowanie obiektów obrotowych.
-Programowanie obiektowe pozwala na czytelne rozdzielenie logiki i łatwiejsze zarządzanie kodem.
-requestAnimationFrame zapewnia płynną i wydajną animację.
+## Spełnione wymagania
+Projekt spełnia wymagania zadania laboratoryjnego:
+- poprawne użycie klas ES6,
+- rozdzielenie logiki programu,
+- zastosowanie transformacji układu współrzędnych,
+- użycie `save()` i `restore()`,
+- animacja w czasie rzeczywistym,
+- obsługa interakcji użytkownika,
+- estetyczna tarcza zegara.
+
+## Zrzut ekranu
+W tym miejscu należy dodać zrzut ekranu działającego programu, np.:
+
+```html
+<img src="screenshot.png" alt="Zegar analogowy">
