@@ -56,8 +56,3 @@ W projekcie wykorzystano:
 - kliknięcie myszą na obszarze canvasa - odpalenie fajerwerku w wybranym miejscu,
 - suwak `Gravity` - zmiana wartości grawitacji,
 - suwak `Particles` - zmiana liczby cząsteczek powstających przy eksplozji.
-
-W tym miejscu należy dodać zrzut ekranu działającego programu, na przykład:
-
-```html
-<img src="fireworks.png" alt="System cząsteczkowy - fajerwerki">
