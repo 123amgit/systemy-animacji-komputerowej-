@@ -19,11 +19,6 @@ Projekt został wykonany w sposób obiektowy:
 
 Dodatkowo zaimplementowano możliwość zatrzymania i wznowienia animacji za pomocą klawisza **Spacja**.
 
-## Struktura projektu
-- `index.html` - plik uruchamiający projekt i zawierający element `canvas`
-- `script.js` - plik zawierający logikę działania zegara
-- `README.md` - opis projektu
-
 ## Zastosowane elementy
 W projekcie wykorzystano:
 - HTML5
@@ -43,19 +38,3 @@ Aby uruchomić projekt, należy otworzyć plik `index.html` w przeglądarce inte
 
 ## Sterowanie
 - `Spacja` - zatrzymanie / wznowienie animacji
-
-## Spełnione wymagania
-Projekt spełnia wymagania zadania laboratoryjnego:
-- poprawne użycie klas ES6,
-- rozdzielenie logiki programu,
-- zastosowanie transformacji układu współrzędnych,
-- użycie `save()` i `restore()`,
-- animacja w czasie rzeczywistym,
-- obsługa interakcji użytkownika,
-- estetyczna tarcza zegara.
-
-## Zrzut ekranu
-W tym miejscu należy dodać zrzut ekranu działającego programu, np.:
-
-```html
-<img src="screenshot.png" alt="Zegar analogowy">
