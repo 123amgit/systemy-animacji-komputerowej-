@@ -1,65 +1,69 @@
 # Library Ghost
 
-## Opis projektu
+## Opis gry
 
-Library Ghost to autorska gra 2D tworzona w Pythonie z użyciem biblioteki Raylib. Gracz będzie sterował duchem poruszającym się po bibliotece. Celem gry będzie zbieranie zagubionych stron książek i odnoszenie ich do magicznej półki, unikając przy tym strażników oraz światła latarek.
+**Library Ghost** to autorska gra 2D wykonana w Pythonie z użyciem Raylib.
+Gracz steruje małym duchem w bibliotece, zbiera zagubione strony książek
+i odnosi je do magicznej półki. Należy unikać strażników oraz światła ich latarek,
+ponieważ światło osłabia ducha.
 
-Projekt nie jest klonem gier wykonywanych na laboratoriach. Nie jest to Space Invaders, Asteroids ani on-rails shooter. Gra będzie miała własny temat, mechanikę i strukturę rozgrywki.
+## Wybrany silnik
 
-## Aktualny stan projektu
+Projekt używa:
 
-Na obecnym etapie wykonano podstawowy szkielet projektu:
+- Python 3
+- Raylib-Python
 
-- utworzono folder `lab_15`,
-- dodano podstawową strukturę plików,
-- dodano plik `README.md`,
-- dodano plik `requirements.txt`,
-- uruchomiono okno gry w Raylib,
-- dodano prosty ekran startowy,
-- dodano podstawową maszynę stanów gry:
-  - `MENU`,
-  - `PLAYING`,
-  - `GAME_OVER`,
-  - `WIN`.
+## Instrukcja uruchomienia
 
-Aktualnie działa ekran startowy. Po naciśnięciu `ENTER` gra przechodzi do tymczasowego ekranu rozgrywki. W kolejnych etapach zostaną dodane właściwe mechaniki gry.
+1. Otwórz katalog `lab_15` w PyCharm.
+2. Zainstaluj zależności:
 
-## Planowane mechaniki
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-W kolejnych etapach projektu zostaną dodane:
+3. Uruchom plik:
 
-- ruch gracza,
-- mapa biblioteki,
-- przeszkody i kolizje,
-- zbieranie zagubionych stron,
-- odnoszenie stron do półki,
-- strażnicy z prostą sztuczną inteligencją,
-- wykrywanie gracza przez światło latarki,
-- pasek energii ducha,
-- ekran wygranej i przegranej,
-- efekty dźwiękowe.
-
-## Własny mechanizm
-
-Własnym mechanizmem gry będzie tryb przezroczystości ducha. Gracz będzie mógł aktywować przezroczystość, aby przechodzić przez wybrane przeszkody. Mechanika ta będzie zużywać energię ducha, więc gracz będzie musiał decydować, kiedy warto jej użyć.
+   ```bash
+   python main.py
+   ```
 
 ## Sterowanie
 
-Aktualnie:
+- `ENTER` - start gry z menu
+- `ESC` - wyjście z gry
 
-- `ENTER` - rozpoczęcie gry z menu,
-- `BACKSPACE` - powrót z ekranu gry do menu,
-- `ESC` - zamknięcie okna gry.
+W kolejnych etapach zostanie dodane:
+- ruch ducha,
+- kolizje z przeszkodami,
+- zbieranie stron,
+- strażnicy,
+- tryb przezroczystości.
 
-Docelowo:
+## Własny mechanizm
 
-- `WASD` lub strzałki - ruch ducha,
-- `SPACE` - aktywacja trybu przezroczystości.
+Planowanym własnym mechanizmem jest **tryb przezroczystości ducha**.
+Duch będzie mógł na krótko przechodzić przez wybrane przeszkody, ale zużyje wtedy
+więcej energii. Gracz będzie musiał zdecydować, kiedy opłaca się skrócić drogę,
+a kiedy lepiej zachować energię.
 
-## Uruchomienie projektu
+## Czy projekt jest klonem?
 
-1. Otworzyć folder `lab_15` w PyCharm.
-2. Zainstalować zależności:
+Nie. Projekt nie jest klonem gry z zajęć. Nie jest to Space Invaders,
+Asteroids ani on-rails shooter. Jest to autorska gra 2D typu stealth/collection.
 
-```bash
-pip install -r requirements.txt
+## Aktualny stan projektu
+
+Wersja początkowa zawiera:
+- strukturę katalogu `lab_15`,
+- podstawowy plik `README.md`,
+- konfigurację projektu,
+- prostą pętlę Raylib,
+- maszynę stanów `MENU`, `PLAYING`, `GAME_OVER`, `WIN`,
+- ekran menu jako pierwszy działający fragment projektu.
+
+## Znane ograniczenia
+
+- Na tym etapie gra ma tylko ekran menu.
+- Mechanika gracza, kolizje, przeciwnicy i dźwięki zostaną dodane w kolejnych commitach.
