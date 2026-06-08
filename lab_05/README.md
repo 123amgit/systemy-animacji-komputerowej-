@@ -9,16 +9,6 @@
 5. W scenie powstanie kolekcja `Las` z podkolekcjami `Drzewa`, `Krzewy`, `Paprocie`.
 6. Render zapisze się jako `las_05.png`.
 
-## Co commitować do Git
-
-Po uruchomieniu skryptu commituj:
-
-```bash
-git add las_05.py las_05.png README.md .gitignore
-git commit -m "Fix lab 05 procedural forest generator"
-git push
-```
-
 ## Co spełnia projekt
 
 - słownik `TYPY_ROSLIN`,
